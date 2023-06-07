@@ -1,0 +1,11 @@
+secret:
+  name: mongodb-secret
+  usernameKey: mongo-root-username
+  passwordKey: mongo-root-password
+
+configMap:
+  name: mongodb-configmap
+  databaseURLKey: database_url
+
+service:
+  nodePort: 30000

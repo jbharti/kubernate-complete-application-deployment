@@ -1,0 +1,3 @@
+apiVersion: v2
+name: mongodb-chart
+version: 0.1.0

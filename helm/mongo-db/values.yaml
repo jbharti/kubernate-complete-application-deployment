@@ -1,0 +1,9 @@
+secret:
+  name: mongodb-secret
+  usernameKey: mongo-root-username
+  passwordKey: mongo-root-password
+  
+databaseURL: mongodb-service
+
+mongoRootUsername: username
+mongoRootPassword: password
