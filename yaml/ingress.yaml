@@ -1,17 +1,16 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: name
+  name: mongo-ui
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-    - host: app.com
+    - host: mongoui.com
       http:
-        paths:
-          - path: /
+        paths: 
             backend:
-              serviceName: my-service
-              servicePort: 8080
+              serviceName: mongo-express-service
+              servicePort: 8081
 
 
