@@ -1,0 +1,41 @@
+### kubectl apply commands in order
+    
+    kubectl apply -f mongo-secret.yaml
+    kubectl apply -f mongo.yaml
+    kubectl apply -f mongo-configmap.yaml 
+    kubectl apply -f mongo-express.yaml
+	
+	kubectl apply -f artifactory-deployment.yaml
+	kubectl apply -f jenkins-deployment.yaml
+	kubectl apply -f sonarqube-deployment.yaml
+
+
+	
+### port forward
+kubectl port-forward service/mongo-express-service 8081:8081
+
+### kubectl get commands
+
+    kubectl get pod
+    kubectl get pod --watch
+    kubectl get pod -o wide
+    kubectl get service
+    kubectl get secret
+    kubectl get all | grep mongodb
+
+### kubectl debugging commands
+
+    kubectl describe pod mongodb-deployment-xxxxxx
+    kubectl describe service mongodb-service
+    kubectl logs mongo-express-xxxxxx
+
+
+	
+### kubectl delete commands in order
+    kubectl delete -f mongo-express.yaml
+	kubectl delete -f mongo-configmap.yaml
+	kubectl delete -f mongo.yaml
+    kubectl delete -f mongo-secret.yaml
+    
+    
+    
